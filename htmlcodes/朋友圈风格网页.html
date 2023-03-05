@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>朋友圈</title>
+    <style>
+        /* 整体样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F0F0F0;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+        }
+
+        /* 上半部分样式 */
+        /* 类head中的内容向上移动 */
+        .head {
+            margin-top: -50px;
+        }
+
+        .head p {
+            /* 设置段落字体样式 */
+            color: #fffeff;
+            font-size: 18px;
+            font-weight: 700;
+            /* 设置段落位置 */
+            margin-left: 320px;
+            /* 减小底部外边距，使头像上移 */
+            margin-bottom: -40px;
+        }
+
+        .head img {
+            /* 设置头像位置 */
+            border-radius: 10px;
+            /* 设置头像圆角 */
+            margin-left: 400px;
+        }
+        /* 下半部分：每条动态的样式 */
+
+        .new {
+            /* 限定每条动态的上下间隔（外边距）*/
+            margin: 40px 0;
+            /* 动态间的分割线 */
+            border-bottom: 1px solid #e4e4e4;
+        }
+
+        .pic {
+            /* 调整头像位置 */
+            margin-left: 20px;
+        }
+
+
+        .info {
+            /* 将动态的内容放在头像旁边 */
+            width: 350px;
+            margin-left: 100px;
+            margin-top: -80px;
+        }
+
+        /* 类info中的第一个p元素 */
+        .info p:first-child {
+            /* 动态中的昵称样式 */
+            font-size: 18px;
+            color: #606a8e;
+            font-weight: 800;
+        }
+
+        .time {
+            /* 调整“发布时间”的位置 */
+            margin-left: 100px;
+            
+        }
+
+        .time p {
+            /* 设置发布时间的字体样式 */
+            font-size: 14px;
+            color: #b2b2b2;
+            margin-bottom: -23px;
+        }
+
+        .btn {
+            /* 评论按钮位置 */
+            border-radius: 5px;
+            margin-left: 320px;
+        }
+
+        .comment {
+            width: 364px;
+            background-color: #f7f7f7;
+            margin-left: 100px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .like {
+            /* 点赞区 */
+            border-bottom: 1px solid #e3e3e3;
+            line-height: 40px;
+        }
+
+        .like img {
+            /* 点赞图片位置 */
+            margin-left: 12px;
+        }
+
+        .like span {
+            /* 点赞人昵称 */
+            font-size: 14px;
+            color: #62648a;
+            padding: 0 6px;
+        }
+
+        .reply {
+            /* 评论内容 */
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+
+        .reply p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .reply span {
+            /* 评论人昵称 */
+            color: #62648a;
+            padding: 0 0 0 6px;
+            font-size: 16px;
+        }
+        td {
+            /* 单元格的左右内边距 */
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 朋友圈整体 -->
+    <div class="container">
+        <!-- 上半部分 -->
+        <div class="top">
+            <!-- 背景 -->
+            <img src="http://nocturne.bczcdn.com/file/1654770066237_20884/bac_new.png" width="500">
+            <!-- 昵称与头像 -->
+            <div class="head">
+                <p>小夜Algo</p>
+                <img src="http://nocturne.bczcdn.com/audio/1653276086627_88993/wecom-temp-91c933c365d4059a83cbf9428b93b6d8.png" width="80">
+            </div>
+        </div>
+        <!-- 下半部分 -->
+        <div class="bottom">
+            <!-- 第一条动态 -->
+            <div class="new">
+                <!-- 头像 -->
+                <img class="pic" src="http://nocturne.bczcdn.com/audio/1653276086627_88993/wecom-temp-91c933c365d4059a83cbf9428b93b6d8.png" width="60">
+                <!-- 内容 -->
+                <div class="info">
+                    <p>小夜Algo</p>
+                    <p>今天发布一条朋友圈<br>我get到一门新的技术。</p>
+                    <!-- 内容配图 -->
+                    <img src="https://ali.bczcdn.com/nocturne/static/img/1.ff709983.png" width="360">
+                </div>
+                <!-- 发布时间 -->
+                <div class="time">
+                    <p>1分钟前</p>
+                    <img src="http://nocturne.bczcdn.com/img/1654761623364_73980/buttom.png"   height="20px" class="btn">
+                </div>
+                <!-- 评论 -->
+                <div class="comment">
+                    <!-- 点赞 -->
+                    <div class="like">
+                        <img src="http://nocturne.bczcdn.com/file/1651820012076_33293/heart.png" width="10">
+                        <!-- 评论人名字 -->
+                        <span>小黄Buggy</span>
+                    </div>
+                    <!-- 回复 -->
+                    <div class="reply">
+                        <p><span>小黄Buggy：</span>在哪里学的，我也要学</p>
+                    </div>
+                </div>
+            </div>
+            <!--第二条动态-->
+            <div class="new">
+                <!-- 头像 -->
+                <img class="pic" src="http://nocturne.bczcdn.com/audio/1653276431191_47153/664821653276122_.pic.jpg" width="60">
+                <!-- 内容 -->
+                <div class="info">
+                    <p>佩拉Perla</p>
+                    <p>分享我的化妆品</p>
+                    <!-- 使用表格展示多张图片 -->
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <img src="http://nocturne.bczcdn.com/file/1651820098066_612/img3.png" width="71">
+                            </td>
+                            <td>
+                                <img src="http://nocturne.bczcdn.com/file/1651820126392_69055/img4.png" width="71">
+                            </td>
+                            <td>
+                                <img src="http://nocturne.bczcdn.com/file/1651820139639_48522/img5.png" width="71">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 发布时间 -->
+                <div class="time">
+                    <p>8分钟前</p>
+                    <img src="http://nocturne.bczcdn.com/img/1654761623364_73980/buttom.png"   height="20px" class="btn">
+                </div>
+                <!-- 评论 -->
+                <div class="comment">
+                    <div class="like">
+                        <img src="http://nocturne.bczcdn.com/file/1651820012076_33293/heart.png" width="10">
+                        <span>小夜Algo</span>
+                    </div>
+                    <div class="reply">
+                        <p><span>小夜Algo：</span>收藏了</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
